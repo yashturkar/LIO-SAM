@@ -1,5 +1,7 @@
 # LIO-SAM
 
+## READ config/fixes.txt before you start installation
+
 **A real-time lidar-inertial odometry package. We strongly recommend the users read this document thoroughly and test the package with the provided dataset first. A video of the demonstration of the method can be found on [YouTube](https://www.youtube.com/watch?v=A0H8CoORZJU).**
 
 <p align='center'>
@@ -57,9 +59,10 @@ This is the original ROS1 implementation of LIO-SAM. For a ROS2 implementation s
 
 - [ROS](http://wiki.ros.org/ROS/Installation) (tested with Kinetic and Melodic. Refer to [#206](https://github.com/TixiaoShan/LIO-SAM/issues/206) for Noetic)
   ```
-  sudo apt-get install -y ros-kinetic-navigation
-  sudo apt-get install -y ros-kinetic-robot-localization
-  sudo apt-get install -y ros-kinetic-robot-state-publisher
+  sudo apt-get install -y ros-melodic-navigation
+  sudo apt-get install -y ros-melodic-robot-localization
+  sudo apt-get install -y ros-melodic-robot-state-publisher
+  sudo apt-get install ros-melodic-cv-*
   ```
 - [gtsam](https://gtsam.org/get_started/) (Georgia Tech Smoothing and Mapping library)
   ```
@@ -73,7 +76,7 @@ Use the following commands to download and compile the package.
 
 ```
 cd ~/catkin_ws/src
-git clone https://github.com/TixiaoShan/LIO-SAM.git
+git clone https://github.com/yashturkar/LIO-SAM.git
 cd ..
 catkin_make
 ```

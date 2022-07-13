@@ -1,0 +1,15 @@
+Install "ros-melodic-cv-cv_bridge"
+
+-----------------------------------------------------------------
+change the file:
+
+/opt/ros/melodic/share/cv_bridge/cmake/cv_bridgeConfig.cmake
+change this line:
+
+set(_include_dirs "include;/usr/include;/usr/include/opencv")
+to
+
+set(_include_dirs "include;/usr/include;/usr/include/opencv4")
+
+
+-----------------------------------------------------------------
