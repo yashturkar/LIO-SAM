@@ -79,6 +79,16 @@ cd ~/catkin_ws/src
 git clone https://github.com/yashturkar/LIO-SAM.git
 cd ..
 catkin_make
+# Use this if BOOST - PCL error
+
+# For x86
+catkin_make -DBoost_LIBRARY_DIR_RELEASE=/usr/lib/x86_64-linux-gnu 
+
+# For arm64
+catkin_make -DBoost_LIBRARY_DIR_RELEASE=/usr/lib/aarch64-linux-gnu 
+
+
+
 ```
 
 ## Using Docker
